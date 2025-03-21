@@ -1,0 +1,58 @@
+{
+    "1": {
+        "word": "all",
+        "translation": "todas",
+        "translation_decoded": "todas",
+        "synonyms": "[cada, todos, entero]",
+        "example_lan1": "All the cookies were eaten.",
+        "example_lan2": "Se comieron todas las galletas."
+    },
+    "2": {
+        "word": "and",
+        "translation": "y",
+        "translation_decoded": "y",
+        "synonyms": "[y, e, ni]",
+        "example_lan1": "I would like tea and coffee.",
+        "example_lan2": "Me gustar\u00eda t\u00e9 y caf\u00e9."
+    },
+    "3": {
+        "word": "boy",
+        "translation": "ni\u00f1o",
+        "translation_decoded": "nino",
+        "synonyms": "[chico, muchacho, joven]",
+        "example_lan1": "The boy played happily in the park.",
+        "example_lan2": "El ni\u00f1o jugaba feliz en el parque."
+    },
+    "4": {
+        "word": "car",
+        "translation": "coche",
+        "translation_decoded": "coche",
+        "synonyms": "[automovil, vehiculo, maquina]",
+        "example_lan1": "I bought a new car.",
+        "example_lan2": "Compr\u00e9 un coche nuevo."
+    },
+    "5": {
+        "word": "cat",
+        "translation": "gato",
+        "translation_decoded": "gato",
+        "synonyms": "[gato domestico, minino, michi]",
+        "example_lan1": "The cat sat on the windowsill.",
+        "example_lan2": "El gato se sent\u00f3 en el alf\u00e9izar de la ventana."
+    },
+    "6": {
+        "word": "day",
+        "translation": "d\u00eda",
+        "translation_decoded": "dia",
+        "synonyms": "[ jornada, fecha, periodo ]",
+        "example_lan1": "Today is a beautiful day.",
+        "example_lan2": "Hoy es un bello d\u00eda."
+    },
+    "7": {
+        "word": "end",
+        "translation": "fin",
+        "translation_decoded": "fin",
+        "synonyms": "[final, termino, conclusion]",
+        "example_lan1": "At the end of the show, the audience erupted in applause.",
+        "example_lan2": "Al final del espect\u00e1culo, el p\u00fablico estall\u00f3 en aplausos."
+    }
+}
