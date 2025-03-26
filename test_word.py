@@ -1,51 +1,78 @@
 import json
+from create_word import Creator
+import random
+import csv
 
-def test_word(word_to_test, mastery, mastery_level, words_created, lan1, lan2):
-    # print(f"Debug - Attempting to test word_to_test: {word_to_test} (type: {type(word_to_test)})")
-    # print(f"Debug - Available keys in words_created: {list(words_created.keys())}")
+class Tester:
+    def __init__(self):
+        # with open("words_created.json", "r") as file2:
+        #     self.words_created = json.load(file2) 
 
-    word_to_test = str(word_to_test)
+        # with open("mastery.json", "r") as file3:
+        #     self.mastery = json.load(file3)
 
-    # print(f"Debug - After conversion word_to_test: {word_to_test} (type: {type(word_to_test)})")
+        # with open ("words_list_exp.csv", "r") as file1:
+        #     self.words_list = list(csv.reader(file1))
+        pass
+
+    def get_initial_word(self, mastery, words_list, words_created):
+        creator = Creator()
+        while len(mastery["mastery_0"]) < 3:
+            print(f"creating initial word")
+            print(f"length mastery_0: {len(mastery['mastery_0'])}")
+            creator.create_word(mastery, words_list, words_created)
+
+        return random.choice(mastery["mastery_0"])
     
-    word = words_created[word_to_test]['word']
-    translation = words_created[word_to_test]['translation']
-    translation_decoded = words_created[word_to_test]['translation_decoded']
-    synonyms = words_created[word_to_test]['synonyms']
-    example_sentence_lan1 = words_created[word_to_test]['example_lan1']
-    example_sentence_lan1_marked = words_created[word_to_test]['example_lan1'].replace(words_created[word_to_test]['word'], f"'{word}'")
-    example_sentence_lan2 = words_created[word_to_test]['example_lan2']
-    example_sentence_lan2_hidden = words_created[word_to_test]['example_lan2'].replace(words_created[word_to_test]['translation'], '______')
-    
-    print("------------------------------------\n")
-    print(f"Example sentence: {example_sentence_lan1_marked}")
-    print(f"Example translation: {example_sentence_lan2_hidden}")
-    print("\n")
+    def pick_mastery(self):
+        testing_probability = [0,0,0,0,0,1,1,1,2,2,3,4,5]
+        mastery_level = random.choice(testing_probability)
 
-    answer = input(f"What is the translation of '{word}' in {lan2}? \n")
-    if answer == "":
-        incorrect_answer(mastery, mastery_level, word_to_test)
-    if answer == translation_decoded or answer in synonyms:
-        correct_answer(word, translation, example_sentence_lan2, word_to_test, mastery, mastery_level)
-    else:
-        incorrect_answer(mastery, mastery_level, word_to_test, translation)
+        return mastery_level
+
+    def get_word(self, mastery, words_list, words_created):
+        creator = Creator() 
+        while len(mastery["mastery_0"]) < 3:
+            print(f"current length of mastery_0: {len(mastery['mastery_0'])}")
+            creator.create_word(mastery, words_list, words_created)
+
+        mastery_level = self.pick_mastery()
+        while mastery[f"mastery_{mastery_level}"] == []:
+            mastery_level = self.pick_mastery()
+                
+        print(f"chosen mastery_level: {mastery_level}")
+        word_to_test = random.choice(mastery[f"mastery_{mastery_level}"])
         
-def correct_answer(word, translation, example_sentence_lan2, word_to_test, mastery, mastery_level):
-    print(f"\nCorrect! {word}: {translation}.\n")
-    if mastery_level == 5:
-        return
-    else:
-        mastery[f"mastery_{mastery_level}"].remove(int(word_to_test))
-        mastery[f"mastery_{mastery_level + 1}"].append(int(word_to_test))
-        with open("mastery.json", "w") as file3:
-            json.dump(mastery, file3, indent=4, separators=(',', ': '))
-        
-def incorrect_answer(mastery, mastery_level, word_to_test, translation):
-    print(f"Incorrect. The correct translation is {translation}.\n")
-    if mastery_level == 0 or mastery_level == 5:
-        return
-    else:    
-        mastery[f"mastery_{mastery_level}"].remove(int(word_to_test))
-        mastery[f"mastery_{mastery_level - 1}"].append(int(word_to_test))
-        with open("mastery.json", "w") as file3:
-            json.dump(mastery, file3, indent=4, separators=(',', ': '))
+        return word_to_test, mastery_level
+
+        # mastery_level = random.choice(testing_probability)
+        # if self.mastery[f"mastery_{mastery_level}"] != []:
+        #     word_to_test = random.choice(self.mastery[f"mastery_{mastery_level}"])
+        #     return word_to_test, mastery_level
+
+    def check_answer(self, answer, mastery, words_created, word_to_test, mastery_level):
+        word_data = words_created[word_to_test]
+        if answer == word_data['translation_decoded'] or answer == word_data['synonyms'][0] or answer == word_data['synonyms'][1] or answer == word_data['synonyms'][2]:
+            self.correct_answer(word_to_test, mastery_level, mastery)
+            return True
+        else:
+            self.incorrect_answer(word_to_test, mastery_level, mastery)
+            return False
+
+    def correct_answer(self, word_to_test, mastery_level, mastery):
+        if mastery_level == 5:
+            return
+        else:
+            mastery[f"mastery_{mastery_level}"].remove(int(word_to_test))
+            mastery[f"mastery_{mastery_level + 1}"].append(int(word_to_test))
+            with open("mastery.json", "w") as file3:
+                json.dump(mastery, file3, indent=4, separators=(',', ': '))
+            
+    def incorrect_answer(self, word_to_test, mastery_level, mastery):
+        if mastery_level == 0 or mastery_level == 5:
+            return
+        else:    
+            mastery[f"mastery_{mastery_level}"].remove(int(word_to_test))
+            mastery[f"mastery_{mastery_level - 1}"].append(int(word_to_test))
+            with open("mastery.json", "w") as file3:
+                json.dump(mastery, file3, indent=4, separators=(',', ': '))
