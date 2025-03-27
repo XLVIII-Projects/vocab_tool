@@ -3,7 +3,6 @@ from unidecode import unidecode
 from langchain_openai import ChatOpenAI
 from dotenv import load_dotenv
 import json
-import csv
 
 load_dotenv()
 llm = ChatOpenAI(model="gpt-4o-mini")
@@ -12,21 +11,6 @@ class Creator:
     def __init__(self):
         self.lan1 = "en"
         self.lan2 = "esp"
-
-    # def file_words_list(self):
-    #     with open("words_list_exp.csv", "r") as file1:
-    #         words_list = list(csv.reader(file1))
-    #     return words_list
-
-    # def file_mastery(self):
-    #     with open("mastery.json", "r") as file3:
-    #         mastery = json.load(file3)
-    #     return mastery
-
-    # def file_words_created(self):
-    #     with open("words_created.json", "r") as file2:
-    #         words_created = json.load(file2)
-    #     return words_created
         
     def create_word(self, mastery, words_list, words_created):
         # Checking if there are words to be created
@@ -44,7 +28,7 @@ class Creator:
 
         words_created[str(word_index)] = {"word": word,
                                     "translation": word_translation,
-                                    "translation_decoded": unidecode(word_translation),
+                                    "translation_decoded": unidecode(word_translation).lower(),
                                     "synonyms": unidecode(synonyms),
                                     "example_lan1": example,
                                     "example_lan2": example_translation}
@@ -58,6 +42,8 @@ class Creator:
             json.dump(mastery, file3, indent=4, separators=(',', ': '))
 
         print(f"New word created: {word} / {word_translation}\n")
+
+        return mastery, words_created
 
 
     def create_example(self, word, word_translation, lan1):

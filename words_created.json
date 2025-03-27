@@ -3,39 +3,39 @@
         "word": "all",
         "translation": "todas",
         "translation_decoded": "todas",
-        "synonyms": "[todo, cada, entero]",
-        "example_lan1": "All friends are invited to the party.",
+        "synonyms": "[todas, completas, enteras]",
+        "example_lan1": "All the students passed the exam.",
         "example_lan2": "'ESP' IS AN INVALID TARGET LANGUAGE . EXAMPLE: LANGPAIR=EN|IT USING 2 LETTER ISO OR RFC3066 LIKE ZH-CN. ALMOST ALL LANGUAGES SUPPORTED BUT SOME MAY HAVE NO CONTENT"
     },
     "2": {
         "word": "and",
         "translation": "y",
         "translation_decoded": "y",
-        "synonyms": "[y, e, ni]",
-        "example_lan1": "I want coffee and cake.",
+        "synonyms": "[y, e, ademas]",
+        "example_lan1": "I like to read books and go for walks.",
         "example_lan2": "'ESP' IS AN INVALID TARGET LANGUAGE . EXAMPLE: LANGPAIR=EN|IT USING 2 LETTER ISO OR RFC3066 LIKE ZH-CN. ALMOST ALL LANGUAGES SUPPORTED BUT SOME MAY HAVE NO CONTENT"
     },
     "3": {
         "word": "boy",
         "translation": "ni\u00f1o",
         "translation_decoded": "nino",
-        "synonyms": "[chico, muchacho, joven]",
-        "example_lan1": "The boy played soccer in the park.",
+        "synonyms": "[chico, muchacho, chaval]",
+        "example_lan1": "The boy played happily in the park.",
         "example_lan2": "'ESP' IS AN INVALID TARGET LANGUAGE . EXAMPLE: LANGPAIR=EN|IT USING 2 LETTER ISO OR RFC3066 LIKE ZH-CN. ALMOST ALL LANGUAGES SUPPORTED BUT SOME MAY HAVE NO CONTENT"
     },
     "4": {
         "word": "car",
         "translation": "coche",
         "translation_decoded": "coche",
-        "synonyms": "[automovil, vehiculo, sedan]",
-        "example_lan1": "I drove my car to the store.",
+        "synonyms": "[automovil, vehiculo, maquina]",
+        "example_lan1": "I bought a new car yesterday.",
         "example_lan2": "'ESP' IS AN INVALID TARGET LANGUAGE . EXAMPLE: LANGPAIR=EN|IT USING 2 LETTER ISO OR RFC3066 LIKE ZH-CN. ALMOST ALL LANGUAGES SUPPORTED BUT SOME MAY HAVE NO CONTENT"
     },
     "5": {
         "word": "cat",
         "translation": "gato",
         "translation_decoded": "gato",
-        "synonyms": "[felino, minino, michi]",
+        "synonyms": "[miau, felino, minino]",
         "example_lan1": "The cat slept peacefully on the windowsill.",
         "example_lan2": "'ESP' IS AN INVALID TARGET LANGUAGE . EXAMPLE: LANGPAIR=EN|IT USING 2 LETTER ISO OR RFC3066 LIKE ZH-CN. ALMOST ALL LANGUAGES SUPPORTED BUT SOME MAY HAVE NO CONTENT"
     },
@@ -43,7 +43,7 @@
         "word": "day",
         "translation": "d\u00eda",
         "translation_decoded": "dia",
-        "synonyms": "[si, jornada, periodo]",
+        "synonyms": "[diafano, jornada, fecha]",
         "example_lan1": "Today is a beautiful day.",
         "example_lan2": "'ESP' IS AN INVALID TARGET LANGUAGE . EXAMPLE: LANGPAIR=EN|IT USING 2 LETTER ISO OR RFC3066 LIKE ZH-CN. ALMOST ALL LANGUAGES SUPPORTED BUT SOME MAY HAVE NO CONTENT"
     },
@@ -52,54 +52,54 @@
         "translation": "fin",
         "translation_decoded": "fin",
         "synonyms": "[final, termino, conclusion]",
-        "example_lan1": "At the end of the day, we finally found peace.",
+        "example_lan1": "The end of the movie left everyone in tears.",
         "example_lan2": "'ESP' IS AN INVALID TARGET LANGUAGE . EXAMPLE: LANGPAIR=EN|IT USING 2 LETTER ISO OR RFC3066 LIKE ZH-CN. ALMOST ALL LANGUAGES SUPPORTED BUT SOME MAY HAVE NO CONTENT"
     },
     "8": {
         "word": "family",
         "translation": "familia",
         "translation_decoded": "familia",
-        "synonyms": "[grupo, clan, hogar]",
-        "example_lan1": "My family is always there for me.",
+        "synonyms": "[hogar, clan, casa]",
+        "example_lan1": "My family means everything to me.",
         "example_lan2": "'ESP' IS AN INVALID TARGET LANGUAGE . EXAMPLE: LANGPAIR=EN|IT USING 2 LETTER ISO OR RFC3066 LIKE ZH-CN. ALMOST ALL LANGUAGES SUPPORTED BUT SOME MAY HAVE NO CONTENT"
     },
     "9": {
         "word": "home",
         "translation": "casa",
         "translation_decoded": "casa",
-        "synonyms": "[hogar, residencia, vivienda]",
-        "example_lan1": "My home is filled with warm memories, just like my casa in Spain.",
+        "synonyms": "[hogar, vivienda, domicilio]",
+        "example_lan1": "I always feel at home when I enter my casa.",
         "example_lan2": "'ESP' IS AN INVALID TARGET LANGUAGE . EXAMPLE: LANGPAIR=EN|IT USING 2 LETTER ISO OR RFC3066 LIKE ZH-CN. ALMOST ALL LANGUAGES SUPPORTED BUT SOME MAY HAVE NO CONTENT"
     },
     "10": {
         "word": "it",
         "translation": "eso",
         "translation_decoded": "eso",
-        "synonyms": "[esto, aquello, eso mismo]",
-        "example_lan1": "It is important to stay hydrated.",
+        "synonyms": "[ello, este, aquello]",
+        "example_lan1": "It is a beautiful day.",
         "example_lan2": "'ESP' IS AN INVALID TARGET LANGUAGE . EXAMPLE: LANGPAIR=EN|IT USING 2 LETTER ISO OR RFC3066 LIKE ZH-CN. ALMOST ALL LANGUAGES SUPPORTED BUT SOME MAY HAVE NO CONTENT"
     },
     "11": {
         "word": "man",
         "translation": "hombre",
         "translation_decoded": "hombre",
-        "synonyms": "[varon, individuo, caballero]",
-        "example_lan1": "The man walked down the street.",
+        "synonyms": "[sujeto, individuo, varon]",
+        "example_lan1": "The man walked quickly down the street.",
         "example_lan2": "'ESP' IS AN INVALID TARGET LANGUAGE . EXAMPLE: LANGPAIR=EN|IT USING 2 LETTER ISO OR RFC3066 LIKE ZH-CN. ALMOST ALL LANGUAGES SUPPORTED BUT SOME MAY HAVE NO CONTENT"
     },
     "12": {
         "word": "name",
         "translation": "nombre",
         "translation_decoded": "nombre",
-        "synonyms": "[titulo, apelativo, denominacion]",
-        "example_lan1": "My name is Alex.",
+        "synonyms": "[sustantivo, apelativo, denominacion]",
+        "example_lan1": "She always forgets my name.",
         "example_lan2": "'ESP' IS AN INVALID TARGET LANGUAGE . EXAMPLE: LANGPAIR=EN|IT USING 2 LETTER ISO OR RFC3066 LIKE ZH-CN. ALMOST ALL LANGUAGES SUPPORTED BUT SOME MAY HAVE NO CONTENT"
     },
     "13": {
         "word": "one",
         "translation": "uno",
         "translation_decoded": "uno",
-        "synonyms": "[dentro, solo, singular]",
+        "synonyms": "[uno, un, una]",
         "example_lan1": "I have one apple.",
         "example_lan2": "'ESP' IS AN INVALID TARGET LANGUAGE . EXAMPLE: LANGPAIR=EN|IT USING 2 LETTER ISO OR RFC3066 LIKE ZH-CN. ALMOST ALL LANGUAGES SUPPORTED BUT SOME MAY HAVE NO CONTENT"
     },
@@ -107,64 +107,16 @@
         "word": "people",
         "translation": "personas",
         "translation_decoded": "personas",
-        "synonyms": "[individuos, seres humanos, sujetos]",
-        "example_lan1": "Different personas can shape how people perceive themselves in social situations.",
+        "synonyms": "[personas, individuos, seres]",
+        "example_lan1": "Different personas can reveal various aspects of a person's identity.",
         "example_lan2": "'ESP' IS AN INVALID TARGET LANGUAGE . EXAMPLE: LANGPAIR=EN|IT USING 2 LETTER ISO OR RFC3066 LIKE ZH-CN. ALMOST ALL LANGUAGES SUPPORTED BUT SOME MAY HAVE NO CONTENT"
     },
     "15": {
         "word": "read",
         "translation": "leer",
         "translation_decoded": "leer",
-        "synonyms": "[estudiar, revisar, consultar]",
-        "example_lan1": "I love to read before bed.",
-        "example_lan2": "'ESP' IS AN INVALID TARGET LANGUAGE . EXAMPLE: LANGPAIR=EN|IT USING 2 LETTER ISO OR RFC3066 LIKE ZH-CN. ALMOST ALL LANGUAGES SUPPORTED BUT SOME MAY HAVE NO CONTENT"
-    },
-    "16": {
-        "word": "school",
-        "translation": "colegio",
-        "translation_decoded": "colegio",
-        "synonyms": "[escuela, institut, academia]",
-        "example_lan1": "She studies every day at school after classes.",
-        "example_lan2": "'ESP' IS AN INVALID TARGET LANGUAGE . EXAMPLE: LANGPAIR=EN|IT USING 2 LETTER ISO OR RFC3066 LIKE ZH-CN. ALMOST ALL LANGUAGES SUPPORTED BUT SOME MAY HAVE NO CONTENT"
-    },
-    "17": {
-        "word": "speak",
-        "translation": "hablar",
-        "translation_decoded": "hablar",
-        "synonyms": "[charlar, platicar, conversar]",
-        "example_lan1": "I will speak at the meeting tomorrow.",
-        "example_lan2": "'ESP' IS AN INVALID TARGET LANGUAGE . EXAMPLE: LANGPAIR=EN|IT USING 2 LETTER ISO OR RFC3066 LIKE ZH-CN. ALMOST ALL LANGUAGES SUPPORTED BUT SOME MAY HAVE NO CONTENT"
-    },
-    "18": {
-        "word": "the",
-        "translation": "la",
-        "translation_decoded": "la",
-        "synonyms": "[el, la, lo]",
-        "example_lan1": "The cat sat on the mat.",
-        "example_lan2": "'ESP' IS AN INVALID TARGET LANGUAGE . EXAMPLE: LANGPAIR=EN|IT USING 2 LETTER ISO OR RFC3066 LIKE ZH-CN. ALMOST ALL LANGUAGES SUPPORTED BUT SOME MAY HAVE NO CONTENT"
-    },
-    "19": {
-        "word": "this",
-        "translation": "esta",
-        "translation_decoded": "esta",
-        "synonyms": "[este, esta, esto]",
-        "example_lan1": "This is my favorite book.",
-        "example_lan2": "'ESP' IS AN INVALID TARGET LANGUAGE . EXAMPLE: LANGPAIR=EN|IT USING 2 LETTER ISO OR RFC3066 LIKE ZH-CN. ALMOST ALL LANGUAGES SUPPORTED BUT SOME MAY HAVE NO CONTENT"
-    },
-    "20": {
-        "word": "you",
-        "translation": "t\u00fa",
-        "translation_decoded": "tu",
-        "synonyms": "[vos, usted, voste]",
-        "example_lan1": "You are my best friend.",
-        "example_lan2": "'ESP' IS AN INVALID TARGET LANGUAGE . EXAMPLE: LANGPAIR=EN|IT USING 2 LETTER ISO OR RFC3066 LIKE ZH-CN. ALMOST ALL LANGUAGES SUPPORTED BUT SOME MAY HAVE NO CONTENT"
-    },
-    "21": {
-        "word": "ask",
-        "translation": "pedir",
-        "translation_decoded": "pedir",
-        "synonyms": "[suplicar, solicitar, requerir]",
-        "example_lan1": "Could you ask her if she needs help?",
+        "synonyms": "[leer, ojear, examinar]",
+        "example_lan1": "I love to read before bedtime.",
         "example_lan2": "'ESP' IS AN INVALID TARGET LANGUAGE . EXAMPLE: LANGPAIR=EN|IT USING 2 LETTER ISO OR RFC3066 LIKE ZH-CN. ALMOST ALL LANGUAGES SUPPORTED BUT SOME MAY HAVE NO CONTENT"
     }
 }
